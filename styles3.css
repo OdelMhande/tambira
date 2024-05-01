@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  
+  .search-bar-small {
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Added this line */
+  }
+  
+  
+  .search-bar-small input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .investor-button {
+    background-color: #7e7e7e;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+  
+  .notification-bell {
+    /* Add bell icon here */
+  }
+  
+  .avatar {
+    background-image: url('avatar.jpg'); /* Add avatar image path here */
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px; /* Adjust as needed */
+  }
+  .banner {
+    position: relative;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Assuming you want rounded corners */
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+  }
+  
+  .banner-text {
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  }
+  .banner-text2{
+    color: white;
+    font-size: small ;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+
+  }
+  
+ 
+  .big-search-bar {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .big-search-bar input {
+    width: 80%;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .storyline {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .storyline h3 {
+    margin-bottom: 10px;
+  }
+  
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px; /* Add some space to prevent content from touching scrollbar */
+  }
+  
+  .featured-items {
+    display: inline-flex;
+  }
+  
+  .featured-item {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Add some space between items */
+  }
+  
+  .featured-item img {
+    width: 150px; /* Adjust image width as needed */
+    border-radius: 10px;
+  }
+  
+  .featured-item h4 {
+    margin-top: 5px;
+  }
+
+  
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    padding: 20px 30px;
+  }
+  
+  .stories {
+    display: flex;
+    align-items: center;
+    max-width: 768px;
+    border: 1px solid white;
+    border-radius:flex;
+    overflow: auto hidden;
+    /* Overflow para substituir o efeito de slide */
+  }
+  
+  .stories__item {
+    padding: 15px 10px;
+    user-select: none;
+  }
+  
+  .stories__item:first-child {
+    padding-left: 20px;
+  }
+  .stories__item:last-child {
+    padding-right: 20px;
+  }
+  
+  .stories__item button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    width: 64px;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .stories__item-picture {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    padding: 6px;
+    position: relative;
+  }
+  
+  .stories__item-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.0975);
+    pointer-events: none;
+  }
+  
+  .stories__item-username {
+    width: 64px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .stories__item--active .stories__item-picture::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(
+      45deg,
+      rgb(5, 212, 248) 0%,
+      rgb(155, 190, 223) 100%
+    );
+  }
+  
+  .stories__item--active .stories__item-picture img {
+    box-shadow: 0 0 0 2px #fff;
+  }
+  

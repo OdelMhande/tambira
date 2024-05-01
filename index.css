@@ -1,0 +1,355 @@
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* Change background color to white */
+color: #333;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+border-bottom: 1px solid #e0e0e0; /* Add solid light grey line at the bottom */
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+
+.avatar {
+position: relative;
+display: inline-block;
+}
+
+.avatar-image {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.dropdown {
+position: absolute;
+top: 100%;
+right: 0;
+display: none;
+}
+
+.dropbtn {
+width: 16px;
+height: 16px;
+background-color: transparent;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 120px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+right: 0;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.avatar:hover .dropdown,
+.dropdown-content:hover {
+display: block;
+}
+
+
+.search-container {
+  display: flex;
+align-items: center;
+border-radius: 20px;
+background-color: #f0f0f0; /* Change background color to light grey */
+padding: 5px 10px;
+margin-right: 10px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 200px;
+}
+
+.investor-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.bannersmall{
+    background-image: url('aerial-view-business-team.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0; /* Increased padding */
+    border-radius: 200px;
+    margin: 100px; /* Added margin to separate from navbar */ 
+}
+
+.banner {
+    background-image: url('aerial-view-business-team.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0; /* Increased padding */
+    border-radius: 20px;
+    margin: 20px; /* Added margin to separate from navbar */
+}
+
+
+.banner-text {
+    color: #fff;
+    font-size: 40px; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.banner-subtext {
+    color: #fff;
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center; /* Center search bar */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Featured sections */
+.featured-wrapper {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.featured-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.featured-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.featured-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari/Opera */
+}
+
+.featured-card {
+    width: 200px;
+    height: 150px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.featured-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.featured-card h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.featured-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media query for horizontal scroll */
+@media (max-width: 1024px) {
+    .featured-scroll {
+        flex-wrap: nowrap;
+    }
+}
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+height: 100%;
+}
+
+body {
+background-color: white;
+font: 16px/1.15 "Roboto", sans-serif;
+}
+
+.main {
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 1;
+height: 100%;
+padding: 20px 30px;
+}
+
+.stories {
+display: flex;
+align-items: center;
+flex: 1;
+max-width: 998px;
+border: none;
+border-radius: 4px;
+overflow: auto hidden;
+/* Overflow para substituir o efeito de slide */
+}
+
+.stories__item {
+user-select: none;
+}
+
+.stories__item:first-child {
+padding-left: 20px;
+}
+.stories__item:last-child {
+padding-right: 20px;
+}
+
+.stories__item button {
+display: flex;
+flex-direction: column;
+/*align-items: center;*/
+border: 0;
+background: transparent;
+width: 300px;
+height: 200px;
+cursor: pointer;
+outline: 0;
+/*
+border: 1px solid rgba(0, 0, 0, 0.0975);*/
+}
+
+.stories__item-picture {
+width:100%;
+height: 150px;
+margin-bottom: 5px;
+padding: 6px;
+position: relative;
+}
+
+.stories__item-picture img {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+
+pointer-events: none;
+}
+
+.stories__item-username {
+
+text-overflow: ellipsis;
+overflow: hidden;
+font-weight: bold;
+color: #333;
+margin-left: 10px;
+}
+.stories__item-description{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-width: 280px;
+    color:#666;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: left;
+    }
+
+.stories__item--active .stories__item-picture::before {
+content: "";
+display: block;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+border-radius: 50%;
+z-index: -1;
+background: linear-gradient(
+45deg,
+rgba(245, 160, 77, 1) 0%,
+rgba(160, 15, 139, 1) 100%
+);
+}
+
+.stories__item--active .stories__item-picture img {
+box-shadow: 0 0 0 2px #fff;
+}
